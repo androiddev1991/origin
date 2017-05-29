@@ -147,7 +147,6 @@ public class SearchFragment extends Fragment implements View.OnClickListener {
         switch (view.getId()) {
             case R.id.search_button:
                 FragmentTransaction transaction=getFragmentManager().beginTransaction();
-                
                 break;
             case R.id.nearhospital:
             case R.id.nearest_place:

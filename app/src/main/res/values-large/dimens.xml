@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="Tab_Head_height">90dp</dimen>
+    <dimen name="text_size">16sp</dimen>
+
+    <dimen name="textsmall_size">12sp</dimen>
+
+    <dimen name="text_so_small_size">9.5sp</dimen>
+
+    <dimen name="text_size_list">15sp</dimen>
+
+    <dimen name="text_size_bw_small">11sp</dimen>
+
+    <dimen name="gridview_item_height">70dp</dimen>
+
+    <dimen name="divider">20.0dp</dimen>
+
+    <dimen name="divider_grid_list">13dp</dimen>
+
+    <dimen name="height_for_officee">55sp</dimen>
+
+    <dimen name="height_for_itemday1">28sp</dimen>
+    <dimen name="height_doctor">250sp</dimen>
+    <dimen name="text_smallest_size">8sp</dimen>
+
+    <dimen name="text_size_between">14sp</dimen>
+
+    <dimen name="text_size_big">20sp</dimen>
+
+    <dimen name="text_size_sobig">27sp</dimen>
+
+    <dimen name="height_for_verification">32dp</dimen>
+
+    <dimen name="divider_height_officee">6sp</dimen>
+    <dimen name="width_of_pen">18dp</dimen>
+
+    <dimen name="thumb">7dp</dimen>
+
+    <dimen name="height_for_doctoritem">150dp</dimen>
+
+    <dimen name="height_for_itemday">33sp</dimen>
+    <dimen name="height_clerk">240sp</dimen>
+    <dimen name="height_for_accountinfo">45sp</dimen>
+    <dimen name="height_changenumber">235dp</dimen>
+    <dimen name="height_add_accountnumber">400sp</dimen>
+
+    <dimen name="width_for_envelope">28dp</dimen>
+
+
+    <dimen name="fav_icon_height">70dp</dimen>
+    <dimen name="fav_icon_width">60dp</dimen>
+
+    <!-- Get address Section size-->
+    <dimen name="mGetAddress_imageSize_Width">25dp</dimen>
+    <dimen name="mGetAddress_imageSize_Height">25dp</dimen>
+
+    <!--Text size -->
+    <dimen name="mtext_size_button">16sp</dimen>
+    <dimen name="mtext_size_title">17sp</dimen>
+
+    <dimen name="all_title_size">33dp</dimen>
+
+    <dimen name="list_button_height">40dp</dimen>
+
+    <dimen name="margin_bottom_plus">90dp</dimen>
+
+    <dimen name="porfile_pic_width">80dp</dimen>
+    <dimen name="porfile_pic_height">120dp</dimen>
+
+    <dimen name="login_btn_height">80dp</dimen>
+</resources>

@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layoutDirection="ltr"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:draggable_view="http://schemas.android.com/apk/res-auto"
+        xmlns:fab="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:gravity="end"
+            android:orientation="vertical"
+            android:weightSum="11">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="11"
+                android:orientation="vertical"
+                android:weightSum="95">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="90"
+                    android:orientation="horizontal"
+                    android:weightSum="15">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"></LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="14"
+                        android:orientation="vertical"
+                        android:weightSum="103">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="3"></LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="8"
+                            android:orientation="vertical"
+                            android:weightSum="8">
+
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="8"
+                                android:background="@drawable/draw_bg_search2"
+                                android:orientation="horizontal"
+                                android:weightSum="5">
+
+                                <EditText
+                                    fontPath="@string/fontsIran"
+                                    android:id="@+id/search_keyword"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="3.6"
+                                    android:background="@android:color/transparent"
+                                    android:gravity="center"
+                                    android:hint="Search"
+                                    android:imeOptions="actionDone"
+                                    android:singleLine="true"
+                                    android:textSize="@dimen/text_size_between"
+                                    android:textColorHint="@color/colorAccent"
+                                    android:textColor="@color/colorPrimary"
+                                    android:typeface="monospace" />
+
+                                <TextView
+                                    android:textColor="@color/colorPrimary"
+                                    fontPath="@string/fontsIran"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1.25"
+                                    android:id="@+id/tvss"
+                                    android:gravity="center_vertical"
+                                    android:text="جستجو"
+                                    android:textSize="@dimen/text_size_between"
+                                    android:typeface="sans" />
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="10"
+                            android:orientation="vertical"
+                            android:weightSum="8">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"></LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/cityAround"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="7"
+                                android:background="@drawable/draw_bg_search2"
+                                android:orientation="horizontal"
+                                android:weightSum="15">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1.1"></LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1.5"
+                                    android:orientation="vertical"
+                                    android:weightSum="5">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1.13"></LinearLayout>
+
+                                    <ToggleButton
+                                        fontPath="@string/fontsIran"
+                                        android:id="@+id/environment"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="2.74"
+                                        android:background="@drawable/toggled_off"
+                                        android:gravity="center"
+                                        android:text="maan"
+                                        android:textOff=""
+                                        android:textOn="" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"></LinearLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5.75"></LinearLayout>
+
+                                <TextView
+                                    android:textColor="@color/colorPrimary"
+                                    fontPath="@string/fontsIran"
+                                    android:id="@+id/textView11"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="6"
+                                    android:gravity="center_vertical"
+                                    android:text="مطالب عکس دار:"
+                                    android:textSize="@dimen/text_size_between"
+                                    android:typeface="sans" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="10"
+                            android:orientation="vertical"
+                            android:weightSum="8">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"></LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/nearest_place"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="7"
+                                android:background="@drawable/draw_bg_search2"
+                                android:orientation="horizontal"
+                                android:weightSum="15">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1.12"></LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1.5"
+                                    android:orientation="vertical"
+                                    android:weightSum="5">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1.13"></LinearLayout>
+
+                                    <ToggleButton
+                                        android:id="@+id/nearhospital"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="2.74"
+                                        android:background="@drawable/toggled_off"
+                                        android:gravity="center"
+                                        android:text="maan"
+                                        android:textOff=""
+                                        android:textOn="" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"></LinearLayout>
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2.75"></LinearLayout>
+
+                                <TextView
+                                    android:textColor="@color/colorPrimary"
+                                    fontPath="@string/fontsIran"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="9"
+                                    android:gravity="center_vertical"
+                                    android:text="همه دسته ها"
+                                    android:textDirection="rtl"
+                                    android:textSize="@dimen/text_size_between"
+                                    android:typeface="sans" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="10"
+                            android:orientation="vertical"
+                            android:weightSum="8">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"></LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/dayNight"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="7"
+                                android:background="@drawable/draw_bg_search2"
+                                android:orientation="horizontal"
+                                android:weightSum="15">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1.2"></LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1.5"
+                                    android:orientation="vertical"
+                                    android:weightSum="5">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1.13"></LinearLayout>
+
+                                    <ToggleButton
+                                        android:id="@+id/nearest_for_me"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="2.74"
+                                        android:background="@drawable/toggled_off"
+                                        android:gravity="center"
+                                        android:text="maan"
+                                        android:textOff=""
+                                        android:textOn="" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"></LinearLayout>
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5.6"></LinearLayout>
+
+                                <TextView
+                                    android:textColor="@color/colorPrimary"
+                                    fontPath="@string/fontsIran"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="6"
+                                    android:gravity="center_vertical"
+                                    android:text="صعودی"
+                                    android:textSize="@dimen/text_size_between"
+                                    android:typeface="sans" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="9"></LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="8"
+                            android:orientation="horizontal"
+                            android:weightSum="10">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3.5"></LinearLayout>
+
+                            <TextView
+                                fontPath="@string/YekanFont"
+                                android:id="@+id/search_button"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:background="@drawable/draw_btn_radius"
+                                android:gravity="center"
+                                android:text="جستجو"
+                                android:textColor="#fff"
+                                android:textSize="@dimen/text_size_between"
+                                android:typeface="serif"></TextView>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"></LinearLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5"></LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

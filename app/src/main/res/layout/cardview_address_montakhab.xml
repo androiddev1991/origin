@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:weightSum="10.5"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_weight="2.3"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:layout_weight="0.10"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:textColor="@color/colorAccent"
+            android:id="@+id/im_article"
+
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:src="@drawable/one"
+            android:text="نام مکان"
+            android:layout_gravity="center_horizontal|center_vertical"
+            />
+        <FrameLayout
+            android:layout_weight="0.10"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:background="@drawable/draw_border_left_right"
+        android:layout_height="match_parent"
+        android:layout_weight="5.2">
+        <FrameLayout
+            android:layout_weight="0.01"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:textColor="@color/colorAccent"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:id="@+id/drugstore_desc"
+            fontPath="@string/fontsIran_light"
+            android:textSize="@dimen/text_size"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="1"
+            android:text="آدرس مکان"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            />
+        <FrameLayout
+            android:layout_weight="0.01"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+
+            android:layout_height="match_parent">
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".11"
+                />
+            <Button
+                android:layout_gravity="center_vertical"
+                android:id="@+id/DeleteFavorite"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/draw_btn_radius"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/list_button_height"
+                android:text="حذف"
+                fontPath="@string/YekanFont"
+                android:textSize="@dimen/text_size_bw_small"
+                />
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".11"
+                />
+        </LinearLayout>
+
+
+</LinearLayout>

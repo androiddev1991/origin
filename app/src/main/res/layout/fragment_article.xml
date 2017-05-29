@@ -1,0 +1,75 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:orientation="vertical"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="96"
+        >
+        <FrameLayout
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="96"
+            >
+
+            <ScrollView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+                   <ImageView
+                       android:id="@+id/article_image"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/one"
+                       />
+                   <TextView
+                       android:layout_below="@+id/article_image"
+                       android:textAlignment="gravity"
+                       android:gravity="right"
+                       android:lineSpacingExtra="20dp"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="زبیده جهانگیری، زادهٔ ۱۳۲۰ است و همسر زنده یاد محمد قاضی (نگارگر) و مجسمه‌ساز. او فارغ التحصیل هنرستان موسیقی است. از نوجوانی، در سالهای پایانی عمر قمرالملوک وزیری، همراه او بود و دخترخواندهٔ او شناخته می شود.[۱] زبیده جهانگیری در جوانی به مجلهٔ خواندنیها به صاحب امتیازی و سردبیری علی اصغر امیرانی پیوست و در کنار نویسندگانی چون خسرو شاهانی و ذبیح الله منصوری، ابراهیم باستانی پاریزی و ... فعال بود. جهانگیری از انگشت شمار نویسندگان خواندنیها است که تا واپسین شمارهٔ مجله در مردادماه سال ۱۳۵۸ که در این تاریخ امیرانی، مجله را پس از ۳۹ سال انتشار بی وقفه، تعطیل کرد، در خواندنیها حضور داشت.[۲]
+جهانگیری در جوانی مدتی هم به بازیگری در سینما و تئاتر مشغول بود[۳] و به همین سبب پس از افتتاح تلویزیون ملی ایران در سال ۱۳۳۷، او به عنوان نخستین زن بازیگر تلویزیون به همراه چند هنرمند دیگر، به اجرای تئاتر در تلویزیون پرداخت. نخستین نمایشی که او در آن بازی کرد، نمایش «هزار و یک شب» بود و همبازی شدن با محسن فرید، هنرمندان دیگری که بعدها به این گروه پیوستند، اینها بودند: ایرج ناظریان، عزت الله مقبلی و محبوبه همسر عزت الله مقبلی. [۴]
+از کتاب‌های او می توان به کتاب «قمری که خورشید شد» اشاره کرد که حاصل خاطرات و پژوهش های جهانگیری دربارهٔ زندگی و احوال قمرالملوک وزیری است.
+همچنین او تاریخچهٔ همکاری خود با خواندنیها و نویسندگان آن را در کتاب «امیرانی در آیینهٔ تاریخ» نوشته است.
+او کتابخانهٔ نفیس خود را در سال ۱۳۹۳ به بنیاد دائرةالمعارف اسلامی، اهدا کرد."
+                       />
+               </RelativeLayout>
+            </ScrollView>
+        </RelativeLayout>
+        <FrameLayout
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"></FrameLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        />
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_fav_heart"
+       android:layout_gravity="bottom|right"
+
+        />
+</LinearLayout>

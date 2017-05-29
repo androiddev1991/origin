@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FunnyApp</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fontsIran">IRANSans(FaNum)_Bold.ttf</string>
+    <string name="fontsIran_light">IRANSans(FaNum)_Light.ttf</string>
+    <string name="YekanFont">byekan.ttf</string>
+</resources>

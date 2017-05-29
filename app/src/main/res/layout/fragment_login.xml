@@ -1,0 +1,540 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <FrameLayout android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+
+        />
+    <LinearLayout
+        android:layout_weight="18"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="100"
+        >
+        <FrameLayout android:layout_width="0dp"
+            android:layout_weight="30"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="40"
+            android:layout_width="0dp"
+            android:weightSum="100"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/warning_icon"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/stop_login"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="70"
+                android:minHeight="30dp"
+                android:minWidth="30dp"
+                />
+            <TextView
+                android:layout_weight="10"
+                android:layout_below="@+id/warning_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="کاربر گرامی"
+                android:textSize="@dimen/text_size"
+                fontPath="@string/fontsIran"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorAccent"
+                />
+        </LinearLayout>
+        <FrameLayout
+            android:layout_weight="30"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="7"
+        android:weightSum="100"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <FrameLayout
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:textColor="@color/colorAccent"
+            android:gravity="center_horizontal|center_vertical"
+            fontPath="@string/fontsIran_light"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="90"
+            android:textSize="@dimen/mtext_size_title"
+            android:lineSpacingExtra="10dp"
+            android:text="شما به ناحیه کاربری خود وارد نشده اید درصورتی که برای اولین بار وارد سامانه شده اید، عضو شوید."
+            />
+        <FrameLayout
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        />
+    <!--Start MS Ty layout-->
+
+
+    <LinearLayout
+        android:background="@color/colorWhite"
+        android:layout_weight="17"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_height="0dp">
+        <FrameLayout
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"></FrameLayout>
+        <LinearLayout
+            android:background="@drawable/draw_round_lightpurple_square"
+            android:layout_weight="35"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"></LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="660"
+
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        fontPath="@string/fontsIran"
+                        android:id="@+id/ll1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:text="     "
+                        android:textSize="@dimen/text_size_big"></TextView>
+
+                    <TextView
+                        fontPath="@string/fontsIran"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_toRightOf="@+id/ll1"
+                        android:text="*"
+                        android:textColor="@android:color/holo_red_dark"></TextView>
+
+                    <EditText
+                        android:layout_marginLeft="4dp"
+                        android:paddingRight="10dp"
+                        fontPath="@string/fontsIran"
+                        android:id="@+id/etusername"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toLeftOf="@+id/lltxt"
+                        android:layout_toRightOf="@+id/ll1"
+                        android:layout_weight="388"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:hint="شماره تلفن همراه"
+                        android:imeOptions="actionNext"
+                        android:inputType="phone"
+                        android:singleLine="true"
+                        android:textColorHint="@color/colorAccent"
+                        android:textDirection="rtl"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/text_size_between"
+                        android:maxLength="11"
+                        ></EditText>
+
+
+                    <LinearLayout
+                        android:id="@+id/lltxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toLeftOf="@+id/llspace"
+                        android:layout_weight="230"
+                        android:orientation="horizontal"
+
+                        >
+
+                        <TextView
+                            fontPath="@string/fontsIran"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:id="@+id/tv2"
+                            android:text="نام کاربری:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/textsmall_size"
+                            android:typeface="sans" />
+                    </LinearLayout>
+
+                    <TextView
+                        fontPath="@string/fontsIran"
+                        android:id="@+id/llspace"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:text="      "
+                        android:textSize="@dimen/text_size_between"></TextView>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"></LinearLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.125"
+                android:orientation="horizontal"
+                android:weightSum="700">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="660"
+                    android:background="@color/colorPrimary"
+                    ></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"></LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:orientation="horizontal"
+                android:weightSum="700">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"></LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="660"
+
+                    android:orientation="horizontal"
+                    android:weightSum="660">
+
+                    <TextView
+                        fontPath="@string/fontsIran"
+                        android:id="@+id/ll13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:text="     "
+                        android:textSize="@dimen/text_size_big"></TextView>
+
+                    <TextView
+                        android:id="@+id/star"
+                        fontPath="@string/fontsIran"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_toRightOf="@+id/ll13"
+                        android:text="*"
+                        android:textColor="@android:color/holo_red_dark"></TextView>
+                    <EditText
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/colorBlue"
+                        fontPath="@string/fontsIran"
+                        android:id="@+id/etpasword"
+                        android:minWidth="100dp"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toLeftOf="@+id/lltxt1"
+                        android:layout_toRightOf="@id/star"
+                        android:layout_weight="388"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical|right"
+                        android:hint="حداکثر ۶ کاراکتر"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPassword"
+                        android:singleLine="true"
+                        android:textColorHint="@color/colorBlue"
+                        android:textDirection="ltr"
+                        android:textSize="@dimen/text_size_between"
+                        ></EditText>
+
+
+                    <LinearLayout
+                        android:id="@+id/lltxt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toLeftOf="@+id/llspace1"
+                        android:layout_weight="230"
+                        android:orientation="horizontal"
+
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            fontPath="@string/fontsIran"
+
+                            android:text="کلمه عبور:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/textsmall_size"
+                            android:typeface="sans" />
+                    </LinearLayout>
+
+                    <TextView
+                        fontPath="@string/fontsIran"
+                        android:id="@+id/llspace1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:text="      "
+                        android:textSize="@dimen/text_size_between"></TextView>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"></LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+        <FrameLayout
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"></FrameLayout>
+    </LinearLayout>
+
+    <!--Finish MS Ty layout-->
+
+
+    <FrameLayout
+        android:layout_weight="2"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <LinearLayout
+        android:layoutDirection="rtl"
+        android:weightSum="120"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/confirm_deny_layout"
+        android:layout_width="match_parent"
+
+        android:layout_height="@dimen/login_btn_height">
+        <FrameLayout
+            android:layout_weight="10"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"></FrameLayout>
+        <LinearLayout
+            android:layout_weight="27"
+            android:id="@+id/btn_login"
+
+            android:background="@drawable/draw_button_radius_background"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_height="@dimen/login_btn_height"
+            android:weightSum="110"
+            >
+            <FrameLayout
+                android:layout_weight="4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"/>
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="60"
+                android:src="@drawable/login"
+                android:layout_gravity="center"
+                />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                ></FrameLayout>
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/capturedImage"
+                android:layout_gravity="center"
+                fontPath="@string/YekanFont"
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:text="ورود"
+                android:textSize="@dimen/text_size_between"
+
+                android:layout_weight="35"
+                />
+            <FrameLayout
+                android:layout_weight="2"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"/>
+        </LinearLayout>
+        <FrameLayout
+            android:layout_weight="15"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <LinearLayout
+            android:layout_weight="27"
+            android:id="@+id/btnRegister"
+            android:background="@drawable/draw_button_radius_background"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:weightSum="100"
+            android:layout_height="@dimen/login_btn_height">
+            <FrameLayout
+                android:layout_weight="4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"/>
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="60"
+                android:src="@drawable/register"
+                android:layout_gravity="center"
+                />
+            <FrameLayout
+                android:layout_weight="4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"/>
+            <TextView
+                fontPath="@string/YekanFont"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="32"
+                android:text="عضویت"
+                android:textSize="@dimen/text_size_between"
+
+                android:textColor="@color/colorWhite"
+                android:layout_gravity="center"
+
+                />
+            <FrameLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"/>
+        </LinearLayout>
+        <FrameLayout
+            android:layout_weight="10"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        ></FrameLayout>
+    <!--Starting here-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layoutDirection="ltr"
+        android:layout_weight="4.5"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:id="@+id/RetrievePass"
+            android:background="@drawable/draw_btn_radius"
+            >
+
+            <TextView
+                fontPath="@string/YekanFont"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="   آیا کلمه عبور خود را فراموش کرده اید.   "
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_size_between"
+                android:typeface="serif"
+                android:id="@+id/textView2"></TextView>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/rlpis"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/forget_password" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="@dimen/text_so_small_size"
+                android:layout_height="match_parent"></LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <!--Starting here-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        >
+        <ProgressBar
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:id="@+id/inProccess" />
+
+    </RelativeLayout>
+</LinearLayout>
+
+

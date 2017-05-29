@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="Tab_Head_height">100dp</dimen>
+    <dimen name="text_size">13sp</dimen>
+
+    <dimen name="textsmall_size">9sp</dimen>
+
+    <dimen name="height_for_itemday1">21sp</dimen>
+
+    <dimen name="text_so_small_size">6sp</dimen>
+
+    <dimen name="text_size_list">12sp</dimen>
+
+    <dimen name="text_size_bw_small">8sp</dimen>
+
+    <dimen name="gridview_item_height">50dp</dimen>
+
+    <dimen name="divider">15.0dp</dimen>
+
+    <dimen name="divider_grid_list">9dp</dimen>
+
+    <dimen name="height_for_officee">45sp</dimen>
+
+    <dimen name="text_size_between">11sp</dimen>
+
+    <dimen name="text_smallest_size">5sp</dimen>
+
+    <dimen name="text_size_big">15sp</dimen>
+
+    <dimen name="height_for_verification">25dp</dimen>
+
+    <dimen name="divider_height_officee">4sp</dimen>
+
+    <dimen name="width_of_pen">13dp</dimen>
+
+    <dimen name="thumb">4dp</dimen>
+
+    <dimen name="height_for_doctoritem">110dp</dimen>
+
+    <dimen name="height_for_itemday">25sp</dimen>
+    <dimen name="height_clerk">130sp</dimen>
+    <dimen name="height_for_accountinfo">32sp</dimen>
+    <dimen name="height_changenumber">180dp</dimen>
+    <dimen name="height_add_accountnumber">290sp</dimen>
+
+    <dimen name="width_for_envelope">22dp</dimen>
+    <dimen name="text_size_sobig">23sp</dimen>
+
+    <dimen name="design_fab_size_mini" tools:override="true">20dp</dimen>
+    <dimen name="design_fab_content_size" tools:override="true">20dp</dimen>
+    <dimen name="height_doctor">160sp</dimen>
+
+    <dimen name="fav_icon_height">50dp</dimen>
+    <dimen name="fav_icon_width">40dp</dimen>
+    <!--Text size -->
+    <dimen name="mtext_size_button">11sp</dimen>
+    <dimen name="mtext_size_title">12sp</dimen>
+
+    <!-- Get address Section size-->
+    <dimen name="mGetAddress_imageSize_Width">20dp</dimen>
+    <dimen name="mGetAddress_imageSize_Height">20dp</dimen>
+
+    <dimen name="all_title_size">27dp</dimen>
+
+    <dimen name="list_button_height">30dp</dimen>
+    <dimen name="login_btn_height">70dp</dimen>
+
+
+    <dimen name="margin_bottom_plus">50dp</dimen>
+
+    <dimen name="porfile_pic_width">40dp</dimen>
+    <dimen name="porfile_pic_height">40dp</dimen>
+
+</resources>

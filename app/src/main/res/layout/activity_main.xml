@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context="com.example.android.funnyapp.View.MainActivity">
+    <LinearLayout
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        >
+       <TextView
+           fontPath="@string/fontsIran"
+           android:textColor="@color/colorWhite"
+           android:id="@+id/headertitle"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:text="دانستنی ها"
+           android:textSize="@dimen/text_size_big"
+           android:gravity="center_horizontal|center_vertical"
+           />
+    </LinearLayout>
+    <com.example.android.funnyapp.Helper.CustomViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="80"
+        />
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:layout_gravity="right"
+        app:tabGravity="fill"
+        android:layoutDirection="rtl"
+        >
+    </android.support.design.widget.TabLayout>
+</LinearLayout>
